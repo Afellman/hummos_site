@@ -1,0 +1,64 @@
+#home-container {
+max-width: 1280px;
+border: 1px solid black;
+
+}
+
+.nav-item {
+  padding-right: 10px;
+}
+   
+#nav-container {
+
+}
+.navbar{
+  padding: 4% 0 4% 0
+}
+
+#title {
+  text-align: center;
+}
+
+.slider {
+  padding: 0px;
+}
+
+.card_img {
+  height: 200px;
+}
+
+#home-row-2  {
+  height: 45vh;
+}
+
+#home-row-3 {
+padding-top: 10px;
+padding-bottom: 10px;
+}
+
+#home-row-3 .card-body {
+  
+}
+
+#home-row-4 {
+  padding: 5vh 10vw 5vh 10vw;
+  background: grey;
+} 
+
+#home-row-4 img {
+  height: 45vh;
+}
+
+
+.card-body {
+  height: 230px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  background: rgba(255, 255, 255, 0.507);
+  padding: 10px 0px 10px 0px;
+}

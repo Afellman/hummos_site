@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Abraham's Natural Foods</title>
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+  <script type="text/javascript" src="./assets/javascript/app.js"></script>
+</head>
+  <body>
+    <div id="nav-container" class="container-fluid bg-light">
+      <header> 
+        <nav class="navbar d-block navbar-expand-lg navbar-light bg-light">     
+          <div id="title">
+            <h1> Abraham's Natural Foods</h1>
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+           <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul id="navbar-ul" class="navbar-nav ml-auto mr-auto">
+              <li class="nav-item active">
+               <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+               <a class="nav-link" href="./about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./products.html">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./hummos_locater.html">Hummos Locater</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./reviews.html">Reviews</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+    </div>
+    <div id="home-container" class="slider container-fluid">
+      <div id="home-row-1" class="row">
+        <div id="home-col-1" class="col-md-12">
+          <img src="./assets/images/deli_slider_lg.jpg" height='auto' width='100%'>
+        </div>
+      </div>  
+      <div id="home-row-2" class="bg-secondary text-white align-items-center row text-center">
+        <div class="col mx-auto">
+          <h5>Preparing</h5>
+          <h1 style="font-style: italic;">"Middle Eastern Foods From Middle Eastern New Jersey"</em></h1>
+          <h5>Since 1985</h5>
+        </div>
+      </div>
+      <div id="home-row-3" class="row bg-dark ml-0 mr-0">
+        <div class="col-md-4">
+          <div class="card mx-auto" style="width: 20rem;">
+            <img class="card-img-top" src="./assets/images/alex.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Small Batch</h4>
+              <p class="card-text">Unlike the big guys, Abraham's products are still handmade in small batches to unsure the best quality product for our customers</p>
+              <a href="./about.html" class=" btn btn-primary">Our Story</a>
+            </div>
+          </div>
+          </div>
+        <div class="col-md-4">
+          <div class="mx-auto">
+            <div class="card mx-auto" style="width: 20rem;">
+              <img class="card-img-top" src="./assets/images/hummos_garnish.jpg" alt="Card image cap" height="238px">
+              <div class="card-body">
+                <h4 class="card-title">Variety</h4>
+                <p class="card-text">We offer 14 unique flavors of hummos to satisfy any taste buds</p>
+                <br>
+                <a href="./products.html" class="btn btn-primary">Flavors</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mx-auto" style="width: 20rem;">
+            <img class="card-img-top" src="./assets/images/map_thumbnail.png" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Find Us</h4>
+              <p class="card-text"></p>
+              <a href="hummos_locater.html" class="btn btn-primary">Locations</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="home-row-4" class="row ml-0 mr-0">
+        <div class='col'>
+          <img src="..." alt="" class="img-fluid rounded">
+        </div>
+        <div class='col'>
+        </div>
+      </div>
+    </div>
+    <script>
+      
+      var header = $(".navbar-collapse");
+
+      $(document).on("scroll", function(e) {
+        console.log($(this).scrollTop())
+
+        if ($(this).scrollTop() > 98) {
+          header.addClass("sticky");
+        } else {
+          header.removeClass("sticky");
+        }
+        
+      });
+      </script>
+  </body>
+  <footer class="container-fluid bg-info">
+    <div class="row justify-content-around">
+      <div class="col-md-4 text-center">
+        <p> Tel: 732-229-5799</p>
+        <p>Fax: 732-571-0890</p>
+        <p>Email: abrahamshummos@gmail.com</p>
+      </div> 
+      <div class="col-md-4 text-center">
+        <p>Abraham's Natural Foods</p>
+        <p>9 Long Branch Avenue</p>
+        <p>Long Branch, New Jersey 07740</p>
+      </div>
+    </div>
+  </footer> 
+
+</html>
