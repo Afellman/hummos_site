@@ -4,17 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Abraham's Natural Foods</title>
+  <title>Abraham's | About</title>
   <link rel="stylesheet" href="./assets/css/reset.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="icon" href="./assets/images/favicon.png">
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
   <script type="text/javascript" src="./assets/javascript/app.js"></script>
 </head>
   <body>
     <div id="nav-container" class="container-fluid bg-light">
       <header> 
-        <nav class="navbar d-block navbar-expand-lg navbar-light bg-light">     
+        <nav class="navbar d-block navbar-expand-lg navbar-light">     
           <div id="title">
             <h1> Abraham's Natural Foods</h1>
           </div>
@@ -23,10 +24,10 @@
           </button>
            <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul id="navbar-ul" class="navbar-nav ml-auto mr-auto">
-              <li class="nav-item active">
+              <li class="nav-item">
                <a class="nav-link" href="./index.html">Home<span class="sr-only">(current)</span></a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item active">
                <a class="nav-link" href="./about.html">About</a>
               </li>
               <li class="nav-item">
@@ -47,8 +48,36 @@
       </header>
     </div>
     <div id="home-container" class="slider container-fluid">
+      <h1 class="text-center">Our Mission</h1>
+      <div class="row">
+        <div class="col-md-12">
+          <p>Abraham’s is a family name from a family company, working to bring healthy, Middle Eastern fare to your table.
 
+              The Abraham’s seal means the food in your hands was produced in small batches by a dedicated staff, using only the highest quality ingredients and paying the closest attention to freshness.
+              
+              </p>
+        </div>
+      </div>
     </div>
+    <script>
+      
+      var header = $(".navbar-collapse");
+      var navbar = $('.navbar')
+
+      $(document).on("scroll", function(e) {
+        console.log($(this).scrollTop())
+
+        if ($(this).scrollTop() > 270) {
+          header.addClass("sticky");
+          navbar.addClass('extra-padding');
+
+        } else {
+          header.removeClass("sticky");
+          navbar.removeClass('extra-padding');
+        }
+        
+      });
+      </script>
   </body>
   <footer class="container-fluid bg-info">
     <div class="row justify-content-around">
@@ -64,4 +93,5 @@
       </div>
     </div>
   </footer> 
+
 </html>

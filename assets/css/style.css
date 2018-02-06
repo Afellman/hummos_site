@@ -1,43 +1,61 @@
-#home-container {
-max-width: 1280px;
-border: 1px solid black;
+body {
+  background: #FFF3DC;
+}
 
+header {
+  background: url("../images/hummos.png");
+  background-repeat: no-repeat;
+  background-size: 35vw;
+  background-position: center;
+  
+}
+
+#nav-container {
+  background: linear-gradient(90deg , #F4CA80, rgb(241, 209, 153));
+  box-shadow: 1px 2px 3px #888888;
+  padding: 0px;
+}
+
+#nav-container * {
+  color: white;
+  z-index: 1;
+}
+
+.navbar{
+  padding: 12% 0 12% 0
 }
 
 .nav-item {
   padding-right: 10px;
 }
    
-#nav-container {
-
-}
-.navbar{
-  padding: 4% 0 4% 0
-}
-
-#title {
-  text-align: center;
+#navbarSupportedContent {
+  padding: 5px 0 5px 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.479);
 }
 
-.slider {
-  padding: 0px;
-}
 
-.card_img {
-  height: 200px;
-}
-
-#home-row-2  {
-  height: 45vh;
+#home-container {
+  box-shadow: 1px 2px 3px #888888;
+  background: #FEE1AB;
+  max-width: 1050px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 50px 20px 20px 20px;
 }
 
 #home-row-3 {
-padding-top: 10px;
-padding-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
+#home-row-3 .card {
+  box-shadow: 1px 2px 3px #888888;
+  border: none;
+}
 #home-row-3 .card-body {
-  
+  background: #FFF3DC;
 }
 
 #home-row-4 {
@@ -50,15 +68,52 @@ padding-bottom: 10px;
 }
 
 
-.card-body {
-  height: 230px;
+#title {
+  margin-bottom: 20px;
+  text-align: center;
 }
 
+#title h1 {
+  font-size: 5em;
+
+}
+
+
+#slogan {
+  padding: 0 0px 50px 0px;
+}
+
+/* #header-img {
+  position: absolute;
+  left: 50%;
+  height: 33vw;
+  z-index: 0;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%)
+} */
+
+/* #somelement {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%)
+  } */
+
+
 .sticky {
-  position: fixed;
+  position: fixed !important;
   top: 0;
   width: 100%;
   z-index: 99;
   background: rgba(255, 255, 255, 0.507);
   padding: 10px 0px 10px 0px;
+} 
+
+footer {
+  background: #F4CA80;
+  padding: 20px 0 20px 0;
+}
+
+.extra-padding {
+  padding-bottom: 202px;
 }
