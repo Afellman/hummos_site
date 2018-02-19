@@ -1,0 +1,24 @@
+{
+  "name": "hummos_site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Afellman/hummos_site.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Afellman/hummos_site/issues"
+  },
+  "homepage": "https://github.com/Afellman/hummos_site#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2"
+  }
+}
