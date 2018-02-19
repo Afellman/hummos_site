@@ -1,5 +1,15 @@
+/* ---------- Global Styles -------------- */
+
+@font-face {
+  font-family: 'cooper';
+  src: url('../cooper_black.ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-size: 12px;
+}
+
 body {
-  background: #FFF3DC;
+    background: #FFF3DC;
 }
 
 header {
@@ -9,6 +19,17 @@ header {
   background-position: center;
   
 }
+
+footer {
+  background: #F4CA80;
+  padding: 20px 0 20px 0;
+}
+
+.wrapper {
+  background: rgba(0, 0, 0, 0.199);
+}
+
+/* --------------- Nav Styles ----------------- */
 
 #nav-container {
   background: linear-gradient(90deg , #F4CA80, rgb(241, 209, 153));
@@ -22,27 +43,41 @@ header {
 }
 
 .navbar{
-  padding: 12% 0 12% 0
+  padding: 12% 0 12% 0;
 }
 
 .nav-item {
   padding-right: 10px;
 }
    
+#title {
+  font-family: "cooper", sans-serif;
+}
 #navbarSupportedContent {
   padding: 5px 0 5px 0;
   width: 100%;
   background: rgba(0, 0, 0, 0.479);
 }
 
+.sticky {
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  background: rgba(255, 255, 255, 0.507);
+  padding: 10px 0px 10px 0px;
+} 
 
-#home-container {
+/* --------------- Home Styles ----------------- */
+
+#home-container,
+#products-container{
   box-shadow: 1px 2px 3px #888888;
   background: #FEE1AB;
   max-width: 1050px;
   margin-top: 50px;
   margin-bottom: 50px;
-  padding: 50px 20px 20px 20px;
+  padding: 20px 20px 20px 20px;
 }
 
 #home-row-3 {
@@ -54,6 +89,7 @@ header {
   box-shadow: 1px 2px 3px #888888;
   border: none;
 }
+
 #home-row-3 .card-body {
   background: #FFF3DC;
 }
@@ -80,40 +116,40 @@ header {
 
 
 #slogan {
-  padding: 0 0px 50px 0px;
+  padding: 60px 0px 60px 0px;
+  background: rgba(243, 198, 76, 0.849);
 }
 
-/* #header-img {
-  position: absolute;
-  left: 50%;
-  height: 33vw;
-  z-index: 0;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%)
-} */
-
-/* #somelement {
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%)
-  } */
-
-
-.sticky {
-  position: fixed !important;
-  top: 0;
-  width: 100%;
-  z-index: 99;
-  background: rgba(255, 255, 255, 0.507);
-  padding: 10px 0px 10px 0px;
-} 
-
-footer {
-  background: #F4CA80;
-  padding: 20px 0 20px 0;
-}
 
 .extra-padding {
   padding-bottom: 202px;
+}
+
+#products-container .row {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#products-container .card {
+  background: rgba(255, 255, 255, 0.767);
+  box-shadow: 1px 2px 3px #888888;
+  background: #FFF3DC;
+  margin: auto;
+}
+
+#products-container a:hover {
+  transition: scale(1.1);
+
+}
+/* -------------- Media Quiries ------------------- */
+
+@media (min-width: 576px){
+  .modal-dialog {
+    max-width: 60%;
+  }
+}
+
+@media (max-width: 576px) {
+  .modal-body .card {
+    width: 100% !important;
+  }
 }
