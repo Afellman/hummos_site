@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Abraham's Natural Foods</title>
+  <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+  <script type="text/javascript" src="./assets/javascript/app.js"></script>
+</head>
+  <body>
+    <div id="nav-container" class="container-fluid bg-light">
+      <header> 
+        <nav class="navbar d-block navbar-expand-lg navbar-light">     
+          <div id="title">
+            <h1> Abraham's Natural Foods</h1>
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+           <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul id="navbar-ul" class="navbar-nav ml-auto mr-auto">
+              <li class="nav-item">
+               <a class="nav-link" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+               <a class="nav-link" href="./about.html">About</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="./products.html"><span class="sr-only">(current)</span>Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./hummos_locater.html">Hummos Locater</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./reviews.html">Reviews</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+    </div>
+    <div id="products-container" class="container-fluid">
+      <h1 class="text-center">Products</h1>
+      <hr>
+      <div class="row">
+        <div class="col-md-4">
+          <a href="#" data-toggle="modal" data-target="#modal-traditional">
+            <div class="card" style="width: 20rem;">
+              <img class="card-img-top" src="./assets/images/combo_labels/traditional.png" alt="Card image cap">
+              <div class="card-body">
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="#" data-toggle="modal" data-target="#modal-red-pepper">
+            <div class="card" style="width: 20rem;">
+              <img class="card-img-top" src="./assets/images/combo_labels/red_pepper.png" alt="Card image cap">
+              <div class="card-body">
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4">
+        <a href="#" data-toggle="modal" data-target="#modal-roasted-garlic">
+          <div class="card" style="width: 20rem;">
+            <img class="card-img-top" src="./assets/images/combo_labels/roasted_g.png" alt="Card image cap">
+            <div class="card-body">
+            </div>
+          </div>
+          </a>
+        </div>
+      </div> <!--close row-->
+      <div class="row">
+          <div class="col-md-4">
+            <a href="#" data-toggle="modal" data-target="#modal-sundried-tomato">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="./assets/images/combo_labels/sundried.png" alt="Card image cap">
+                <div class="card-body">
+                </div>
+              </div>
+            </a>
+          </div>
+        <div class="col-md-4">
+          <a href="#" data-toggle="modal" data-target="#modal-hot">
+            <div class="card" style="width: 20rem;">
+              <img class="card-img-top" src="./assets/images/combo_labels/hot.png" alt="Card image cap">
+              <div class="card-body">
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="#" data-toggle="modal" data-target="#modal-parsley">
+            <div class="card" style="width: 20rem;">
+              <img class="card-img-top" src="./assets/images/combo_labels/parsley_onions.png" alt="Card image cap">
+              <div class="card-body">
+              </div>
+            </div>
+          </a>
+        </div>
+      </div> <!--close row-->
+      <div class="row">
+        <div class="col-md-4">
+            <a href="#" data-toggle="modal" data-target="#modal-olives">
+            <div class="card" style="width: 20rem;">
+              <img class="card-img-top" src="./assets/images/combo_labels/olives.png" alt="Card image cap">
+              <div class="card-body">
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="#" data-toggle="modal" data-target="#modal-no-salt">
+            <div class="card" style="width: 20rem;">
+              <img class="card-img-top" src="./assets/images/combo_labels/no_salt.png" alt="Card image cap">
+              <div class="card-body">
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="#" data-toggle="modal" data-target="#modal-horseradish">
+            <div class="card" style="width: 20rem;">
+              <img class="card-img-top" src="./assets/images/combo_labels/horseradish.png" alt="Card image cap">
+              <div class="card-body">
+              </div>
+            </div>
+          </a>
+        </div>
+      </div> <!--close row-->
+      <div class="row">
+          <div class="col-md-4">
+            <a href="#" data-toggle="modal" data-target="#modal-flax">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="./assets/images/combo_labels/original_flax.png" alt="Card image cap">
+                <div class="card-body">
+                </div>
+              </div>
+            </a>
+          </div>
+        <div class="col-md-4">
+          <a href="#" data-toggle="modal" data-target="#modal-chipotle">
+            <div class="card" style="width: 20rem;">
+              <img class="card-img-top" src="./assets/images/combo_labels/chip.png" alt="Card image cap">
+              <div class="card-body">
+              </div>
+          </div>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="#" data-toggle="modal" data-target="#modal-lemony">
+            <div class="card" style="width: 20rem;">
+              <img class="card-img-top" src="./assets/images/combo_labels/lemon_flax.png" alt="Card image cap">
+              <div class="card-body">
+              </div>
+            </div>
+          </a>
+        </div>
+      </div> <!--close row-->
+    </div> <!-- close container-->
+    <div class="modal-container">
+      <div class="modal fade" id="modal-traditional" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="card" style="width: 50vw; margin: auto;">
+                <img class="card-img-top" src="./assets/images/combo_labels/traditional.png" alt="Card image cap">
+                <div class="card-body">
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="modal-red-pepper" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="card" style="width: 50vw; margin: auto;">
+                <img class="card-img-top" src="./assets/images/combo_labels/red_pepper.png" alt="Card image cap">
+                <div class="card-body">
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="modal-roasted-garlic" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="card" style="width: 50vw; margin: auto;">
+                <img class="card-img-top" src="./assets/images/combo_labels/roaseted_g.png" alt="Card image cap">
+                <div class="card-body">
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="modal-sundried-tomato" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="card" style="width: 50vw; margin: auto;">
+                <img class="card-img-top" src="./assets/images/combo_labels/sundried.png" alt="Card image cap">
+                <div class="card-body">
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="modal-hot" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="card" style="width: 50vw; margin: auto;">
+                <img class="card-img-top" src="./assets/images/combo_labels/hot.png" alt="Card image cap">
+                <div class="card-body">
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="modal-parsley" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="card" style="width: 50vw; margin: auto;">
+                <img class="card-img-top" src="./assets/images/combo_labels/parsley_onions.png" alt="Card image cap">
+                <div class="card-body">
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="modal-olives" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="card" style="width: 50vw; margin: auto;">
+                <img class="card-img-top" src="./assets/images/combo_labels/olives.png" alt="Card image cap">
+                <div class="card-body">
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="modal-no-salt" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="card" style="width: 50vw; margin: auto;">
+                <img class="card-img-top" src="./assets/images/combo_labels/no_salt.png" alt="Card image cap">
+                <div class="card-body">
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="modal-horseradish" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="card" style="width: 50vw; margin: auto;">
+                <img class="card-img-top" src="./assets/images/combo_labels/horseradish.png" alt="Card image cap">
+                <div class="card-body">
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="modal-flax" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="card" style="width: 50vw; margin: auto;">
+                <img class="card-img-top" src="./assets/images/combo_labels/original_flax.png" alt="Card image cap">
+                <div class="card-body">
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="modal-chipotle" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="card" style="width: 50vw; margin: auto;">
+                <img class="card-img-top" src="./assets/images/combo_labels/chip.png" alt="Card image cap">
+                <div class="card-body">
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="modal-lemony" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="card" style="width: 50vw; margin: auto;">
+                <img class="card-img-top" src="./assets/images/combo_labels/lemon_flax.png" alt="Card image cap">
+                <div class="card-body">
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <footer class="container-fluid bg-info">
+    <div class="row justify-content-around">
+      <div class="col-md-4 text-center">
+        <p> Tel: 732-229-5799</p>
+        <p>Fax: 732-571-0890</p>
+        <p>Email: abrahamshummos@gmail.com</p>
+      </div> 
+      <div class="col-md-4 text-center">
+        <p>Abraham's Natural Foods</p>
+        <p>9 Long Branch Avenue</p>
+        <p>Long Branch, New Jersey 07740</p>
+      </div>
+    </div>
+  </footer> 
+</html>
