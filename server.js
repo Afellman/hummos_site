@@ -1,36 +1,38 @@
-var express = require("express");
-var bodyParser = require("body-parser");
-//var method = require('method-override');
-
-var PORT = process.env.PORT || 8080;
-
+var path = require('path')
+var express = require('express');
 var app = express();
 
-// Serve static content for the app from the "public" directory in the application directory.
- app.use(express.static("public"));
+// require('routes')(app, path)
+app.set('view engine', 'ejs');
 
- // parse application/x-www-form-urlencoded
- app.use(bodyParser.urlencoded({ extended: false }));
 
- // parse application/json
- app.use(bodyParser.json());
+// use res.render to load up an ejs view file
+app.use(express.static(__dirname + '/'))
 
- // Set Handlebars.
-// var exphbs = require("express-handlebars");
+// index page 
+app.get('/', function(req, res) {
+    res.render('pages/index');
+});
 
-// app.engine("handlebars", exphbs({ defaultLayout: "main" }));
-// app.set("view engine", "handlebars");
+// about page 
+app.get('/about', function(req, res) {
+    res.render('pages/about');
+});
 
- // Import routes and give the server access to them.
- //var routes = require("./controllers/burger_controllers.js");
+app.get('/products', function(req, res) {
+    res.render('pages/products');
+});
 
- //app.use(routes);
-//  app.get('/', function(req, res) {
-// 	res.sendFile(__dirname + 'p/index.html');
-	 
-//  });
+app.get('/reviews', function(req, res) {
+    res.render('pages/reviews');
+});
 
- app.listen(PORT, function() {
-   console.log("App now listening at localhost:" + PORT);
-   });
+app.get('/contact', function(req, res) {
+    res.render('pages/contact');
+});
 
+app.get('/hummos_locator', function(req, res) {
+    res.render('pages/hummos_locater');
+});
+app.listen(8080);
+console.log('8080 is the magic port');

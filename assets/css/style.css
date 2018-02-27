@@ -1,0 +1,57 @@
+/* ---------- Global Styles -------------- */
+
+@font-face {
+  font-family: 'cooper';
+  src: url('../cooper_black.ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-size: 12px;
+}
+
+body {
+    background: #FFF3DC;
+}
+
+header {
+  background: url("../images/hummos.png");
+  background-repeat: no-repeat;
+  background-size: 35vw;
+  background-position: center;
+  
+}
+
+footer {
+  background: #F4CA80;
+  padding: 20px 0 20px 0;
+}
+
+
+
+
+/* --------------- Home Styles ----------------- */
+
+.container{
+  max-width: 960px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px 20px 20px 20px;
+}
+
+
+.extra-padding {
+  padding: 20% 0 19% 0;
+}
+
+/* -------------- Media Quiries ------------------- */
+
+@media (min-width: 576px){
+  .modal-dialog {
+    max-width: 60%;
+  }
+}
+
+@media (max-width: 576px) {
+  .modal-body .card {
+    width: 100% !important;
+  }
+}

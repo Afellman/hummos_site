@@ -1,55 +1,26 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Abraham's Natural Foods</title>
-  <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
-  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-    crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
-  <script type="text/javascript" src="./assets/javascript/app.js"></script>
-</head>
+  <% include ../partials/head %>
+  <style>
+  
+#products-container .row {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#products-container .card {
+  background: rgba(255, 255, 255, 0.767);
+  box-shadow: 1px 2px 3px #888888;
+  background: #FFF3DC;
+  margin: auto;
+}
+
+#products-container a:hover {
+  transition: scale(1.1);
+
+}</style>
   <body>
-    <div id="nav-container" class="container-fluid bg-light">
-      <header> 
-        <nav class="navbar d-block navbar-expand-lg navbar-light">     
-          <div id="title">
-            <h1> Abraham's Natural Foods</h1>
-          </div>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul id="navbar-ul" class="navbar-nav ml-auto mr-auto">
-              <li class="nav-item">
-               <a class="nav-link" href="./index.html">Home</a>
-              </li>
-              <li class="nav-item">
-               <a class="nav-link" href="./about.html">About</a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="./products.html"><span class="sr-only">(current)</span>Products</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./hummos_locater.html">Hummos Locater</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./reviews.html">Reviews</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./contact.html">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </header>
-    </div>
+    <% include ../partials/nav %>
     <div id="products-container" class="container-fluid">
       <h1 class="text-center">Products</h1>
       <hr>
