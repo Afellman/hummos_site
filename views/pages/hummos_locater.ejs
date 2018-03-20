@@ -1,68 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Abraham's Natural Foods</title>
-  <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
-  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-    crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-  <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
-  <script type="text/javascript" src="./assets/javascript/app.js"></script>
-</head>
+  <% include ../partials/head %>
+  <style>
+    #map {
+      height: 500px;
+      width: 100%;
+    }
+  </style>
   <body>
-    <div id="nav-container" class="container-fluid bg-light">
-      <header> 
-        <nav class="navbar d-block navbar-expand-lg navbar-light">     
-          <div id="title">
-            <h1> Abraham's Natural Foods</h1>
-          </div>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul id="navbar-ul" class="navbar-nav ml-auto mr-auto">
-              <li class="nav-item">
-               <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-               <a class="nav-link" href="./about.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./products.html">Products</a>
-              </li>
-              <li class="nav- active">
-                <a class="nav-link" href="./hummos_locater.html">Hummos Locater</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./reviews.html">Reviews</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./contact.html">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </header>
+    <% include ../partials/nav %>
+    <div class="wrapper">
+    <div id="home-container" class="container">
+        <p id="map"><iframe src="//batchgeo.com/map/393a157908cf52d462cb0a4fd87e07ec" frameborder="0" width="100%" height="550" style="border:1px solid #aaa;"></iframe></p><p><small>View <a href="https://batchgeo.com/map/393a157908cf52d462cb0a4fd87e07ec">Hummos Locater</a> in a full screen map</small></p>
     </div>
-    <div id="home-container" class="slider container-fluid">
+  </div>
+  <% include ../partials/footer.ejs%>
 
-    </div>
+  <script type="text/javascript" src="../../assets/js/navbar_stick.js"></script>
   </body>
-  <footer class="container-fluid bg-info">
-    <div class="row justify-content-around">
-      <div class="col-md-4 text-center">
-        <p> Tel: 732-229-5799</p>
-        <p>Fax: 732-571-0890</p>
-        <p>Email: abrahamshummos@gmail.com</p>
-      </div> 
-      <div class="col-md-4 text-center">
-        <p>Abraham's Natural Foods</p>
-        <p>9 Long Branch Avenue</p>
-        <p>Long Branch, New Jersey 07740</p>
-      </div>
-    </div>
-  </footer> 
 </html>

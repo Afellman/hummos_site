@@ -8,47 +8,32 @@
       <h1 class="text-center">Our Mission</h1>
       <div class="row">
         <div class="col-md-12">
-          <p>Abraham’s is a family name from a family company, working to bring healthy, Middle Eastern fare to your table.
-
-              The Abraham’s seal means the food in your hands was produced in small batches by a dedicated staff, using only the highest quality ingredients and paying the closest attention to freshness.
-              
-              </p>
+          <p>
+            Abraham’s is a family name from a family company, working to bring healthy, Middle Eastern fare to your table.
+            The Abraham’s seal means the food in your hands was produced in small batches by a dedicated staff, using only the highest quality ingredients and paying the closest attention to freshness.
+          </p>
         </div>
       </div>
     </div>
+    <% include ../partials/footer.ejs%>
     <script>
       
       var header = $(".navbar-collapse");
-      var navbar = $('.navbar')
+      
 
       $(document).on("scroll", function(e) {
         console.log($(this).scrollTop())
 
-        if ($(this).scrollTop() > 270) {
+        if ($(this).scrollTop() > 190) {
           header.addClass("sticky");
-          navbar.addClass('extra-padding');
+      
 
         } else {
           header.removeClass("sticky");
-          navbar.removeClass('extra-padding');
+      
         }
         
       });
       </script>
   </body>
-  <footer class="container-fluid bg-info">
-    <div class="row justify-content-around">
-      <div class="col-md-4 text-center">
-        <p> Tel: 732-229-5799</p>
-        <p>Fax: 732-571-0890</p>
-        <p>Email: abrahamshummos@gmail.com</p>
-      </div> 
-      <div class="col-md-4 text-center">
-        <p>Abraham's Natural Foods</p>
-        <p>9 Long Branch Avenue</p>
-        <p>Long Branch, New Jersey 07740</p>
-      </div>
-    </div>
-  </footer> 
-
 </html>

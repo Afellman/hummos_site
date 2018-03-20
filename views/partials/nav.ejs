@@ -1,8 +1,17 @@
  <style>
- 
-.narbar-collapse {
+ header {
+  position: relative;
+  top: 0;
+  background: url("../../assets/images/hummos.png");
+  background-repeat: no-repeat;
+  background-size: 425px;
+  background-position: center;
+  height: 450px;
   
-  transition: .5s;
+}
+.narbar-collapse {
+  transition: .4s ease-in;
+ 
 }
 #nav-container {
   background: linear-gradient(90deg , #F4CA80, rgb(241, 209, 153));
@@ -11,12 +20,16 @@
 }
 
 #nav-container * {
+  
   color: white;
-  z-index: 1;
+  
 }
 
 .navbar{
-  padding: 17% 0 17% 0;
+  position: absolute;
+  top: 190px;
+  width: 100%;
+  padding: 0;
 }
 
 .nav-item {
@@ -27,6 +40,7 @@
   font-family: "cooper", sans-serif;
 }
 #navbarSupportedContent {
+  box-shadow: 0 1px 6px rgba(57,73,76,.35);
   padding: 10px 0 10px 0;
   width: 100%;
   background: rgba(0, 0, 0, 0.479);
@@ -38,15 +52,25 @@
   top: 0;
   width: 100%;
   z-index: 99;
-  background: rgba(255, 255, 255, 0.966) !important;
+  background: rgba(255, 255, 255, 0.872) !important;
   padding: 10px 0px 10px 0px;
 } 
 .sticky > ul > li > a {
   color: rgb(27, 27, 27) !important;
 }
+
+@media screen and (max-width: 992px){
+  header {
+    height: 45vw;
+    background-size: 42vw;
+  }
+}
+  
+
 </style>
  <div id="nav-container" class="container-fluid">
   <header> 
+  </header>
     <nav class="navbar d-block navbar-expand-lg navbar-light">     
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -74,5 +98,5 @@
         </ul>
       </div>
     </nav>
-  </header>
+  
 </div>

@@ -6,21 +6,16 @@
   font-weight: normal;
   font-style: normal;
   font-size: 12px;
-}
-
-body {
-    background: #FFF3DC;
-}
-
-header {
-  background: url("../images/hummos.png");
-  background-repeat: no-repeat;
-  background-size: 35vw;
-  background-position: center;
   
 }
 
+body {
+  
+    background: #FFF3DC;
+}
+
 footer {
+  box-shadow: 0 1px 6px rgba(57,73,76,.35);
   background: #F4CA80;
   padding: 20px 0 20px 0;
 }
@@ -32,12 +27,15 @@ footer {
 
 .container{
   max-width: 960px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding: 20px 20px 20px 20px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  
 }
 
-
+/* .container-fluid {
+  margin-top: 40px;
+  margin-bottom: 40px;
+} */
 .extra-padding {
   padding: 20% 0 19% 0;
 }

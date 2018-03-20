@@ -11,38 +11,45 @@
   <% include ../partials/head %>
   <style>
   
-#card-container > div  {
-  padding-top: 10px;
-  padding-bottom: 10px;
+#card-container > div > div > div {
+  box-shadow: 0 1px 2px rgba(57,73,76,.35);
+  /* border: 3px solid #FFF3DC; */
+  transition: .3s;
+  overflow: hidden;
+  
 }
 
-#card-container > div > div > div {
-  box-shadow: 1px 2px 3px #888888;
-  border: 1px solid rgba(0, 0, 0, 0.377);
-  border-radius: 5px;
+#card-container > div > div > div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 1px 10px rgba(57,73,76,.35);
+
 }
 
 #card-container > div > div > div > img {
-  border-radius: 5px;
+  
 }
+
 
 #card-container > div > div > div > div{
   background: #fff;
   padding: 10px;
-  border-radius: 5px;
+  
 }
 
-#about-container > div {
-  border-radius: 5px;
+#about-container {
+  overflow: hidden;
+  box-shadow: 0 1px 6px rgba(57,73,76,.35);
   background: rgba(255, 255, 255, 0.493);
-  padding: 20px 40px 20px 40px;
+  padding: 20px 20px 20px 20px;
 }
 
 
 #slogan-container > div > div > div {
+  font-family: 'cooper';
+  letter-spacing: 2px;
   padding: 30px 0px 30px 0px;
   background: rgba(243, 198, 76, 0.849);
-  box-shadow: 1px 2px 3px #0000005b;
+  box-shadow: 0 1px 6px rgba(57,73,76,.35)
 }
 </style>
   <body>
@@ -51,7 +58,7 @@
     <div id="card-container" class="container">
       <div class="row">
         <div class="col-md-4">
-          <div class="home-cards">
+          <div class="home-cards rounded">
             <img src="assets/images/alex.jpg" alt="Card image cap" height="auto" width="100%">
             <div class="caption">
               <h4>Small Batch</h4>
@@ -61,18 +68,17 @@
           </div>
         </div>
         <div class="col-md-4">
-          <div class="home-cards">
-            <img style=""  src="assets/images/flavors.png" alt="Card image cap" height="auto" width="100%">
+          <div class="home-cards rounded">
+            <img style=""  src="assets/images/flavors.jpg" alt="Card image cap" height="auto" width="100%">
             <div class="caption">
               <h4>Variety</h4>
               <p>We offer 14 unique flavors of hummos to satisfy any taste. Try a different one today!</p>
-              
               <a href="./products" class="btn btn-info">Flavors</a>
             </div>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="home-cards">
+          <div class="home-cards rounded">
             <img src="assets/images/map_thumbnail.png" alt="Card image cap" height="auto" width="100%">
             <div class="caption">
               <h4>Find Us</h4>
@@ -88,7 +94,7 @@
           <div class="col-12">
             <div class="text-dark align-items-center row text-center">
               <div class="col mx-auto">
-                <h1 style="font-style: italic;">"Middle Eastern Foods From Middle Eastern New Jersey"</em>
+                <h1 style="font-style: italic;">"Middle Eastern Foods From Middle Eastern <br> New Jersey"</em>
                 </h1>
                 <h5>Since 1985</h5>
               </div>
@@ -96,11 +102,11 @@
           </div>
         </div>
       </div>
-      <div class="container" id="about-container">
-        <div class="row">
+      <div class="container rounded" id="about-container">
+        <div class="row ">
           <div class="col-12">
             <h1>About</h1>
-            <p>Mollit aute pariatur eu irure nostrud voluptate velit eiusmod sunt labore aute elit aute eu. Et irure laboris veniam exercitation consectetur est anim culpa. Voluptate laborum elit fugiat anim occaecat fugiat est voluptate nisi. Ea duis proident eiusmod cupidatat minim qui tempor est non in est. Est ea proident sint velit pariatur occaecat aute laborum. Consequat occaecat nisi minim commodo aute veniam nisi ullamco. Esse voluptate irure sit aute commodo officia duis.
+            <p>Abraham's best selling line of Middle Eastern foods are found in the tri-state area's finest gourmet and natural food stores. 
             </p>
             <p>In magna eu labore ea eiusmod sunt laborum anim. Commodo occaecat consequat tempor qui magna cupidatat occaecat laborum minim occaecat dolore nulla. Mollit ipsum elit sit consectetur laborum cillum elit aliquip occaecat cupidatat eu reprehenderit. Id ullamco qui sit adipisicing aute sunt tempor. Ipsum amet magna minim mollit esse ex magna proident irure cupidatat. Aute elit non velit enim ex voluptate officia nisi occaecat ad cillum.
             </p>
@@ -108,39 +114,7 @@
         </div><!-- row -->
       </div><!-- container -->
     </div><!-- Wrapper -->
-    <script>
-      
-      var header = $(".navbar-collapse");
-      var navbar = $('.navbar')
-
-      $(document).on("scroll", function(e) {
-        console.log($(this).scrollTop())
-
-        if ($(this).scrollTop() > 218) {
-          header.addClass("sticky");
-          navbar.addClass('extra-padding');
-
-        } else {
-          header.removeClass("sticky");
-          navbar.removeClass('extra-padding');
-        }
-        
-      });
-      </script>
+    <% include ../partials/footer.ejs%>
+    <script type="text/javascript" src="../../assets/js/navbar_stick.js"></script>
   </body>
-  <footer class="container-fluid">
-    <div class="row justify-content-around">
-      <div class="col-md-4 text-center">
-        <p> Tel: 732-229-5799</p>
-        <p>Fax: 732-571-0890</p>
-        <p>Email: abrahamshummos@gmail.com</p>
-      </div> 
-      <div class="col-md-4 text-center">
-        <p>Abraham's Natural Foods</p>
-        <p>9 Long Branch Avenue</p>
-        <p>Long Branch, New Jersey 07740</p>
-      </div>
-    </div>
-  </footer> 
-
 </html>
