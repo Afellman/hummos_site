@@ -51,6 +51,35 @@
   background: rgba(243, 198, 76, 0.849);
   box-shadow: 0 1px 6px rgba(57,73,76,.35)
 }
+
+#blog-container>.row {
+      overflow: hidden;
+      box-shadow: 0 1px 6px rgba(57, 73, 76, .35);
+      background: rgba(255, 255, 255, 0.493);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .blog-row>div>div:nth-of-type(2){
+      margin-left: 1px;
+      border-left: 1px solid black;
+    }
+
+    .blog-row .blog-img-col {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .blog-row .blog-text-col {
+      
+    }
+
+    .blog-row > .blog-text-col {
+      border-left: 1px black solid;
+    }
+
+  
 </style>
   <body>
     <% include ../partials/nav %>
@@ -102,19 +131,41 @@
           </div>
         </div>
       </div>
-      <div class="container rounded" id="about-container">
-        <div class="row ">
-          <div class="col-12">
-            <h1>About</h1>
-            <p>Abraham's best selling line of Middle Eastern foods are found in the tri-state area's finest gourmet and natural food stores. 
-            </p>
-            <p>In magna eu labore ea eiusmod sunt laborum anim. Commodo occaecat consequat tempor qui magna cupidatat occaecat laborum minim occaecat dolore nulla. Mollit ipsum elit sit consectetur laborum cillum elit aliquip occaecat cupidatat eu reprehenderit. Id ullamco qui sit adipisicing aute sunt tempor. Ipsum amet magna minim mollit esse ex magna proident irure cupidatat. Aute elit non velit enim ex voluptate officia nisi occaecat ad cillum.
-            </p>
+      <div class="container rounded bg-light" id="blog-container">
+        <!-- Blog Post -->
+        <div class="row rounded blog-row">
+          <div class="col-md-4 blog-img-col">
+              <a href="https://www.huffingtonpost.com/2014/02/26/hummus-health-benefits_n_4834315.html" target="_blank">
+                <img src="https://i.huffpost.com/gen/1645639/thumbs/o-HUMMUS2-570.jpg?16" alt="" class="img-fluid rounded" style="max-height:100%;">
+              </a>
           </div>
-        </div><!-- row -->
+          <div class="col-md-8 blog-text-col">
+            <div class="row">
+              <div class="col-sm-12 blog-title-col">
+                  <a href="https://www.huffingtonpost.com/2014/02/26/hummus-health-benefits_n_4834315.html" target="_blank">
+                    <h5 class="">"10 Reasons Why We Should All Be Eating More Hummus"</h5>
+                  </a>
+              </div>
+            </div>
+                <p>"If you’re not really into hummus, we bet you know someone 
+                  who is. Your best friend, your mom, your landlord — 
+                  they’re all eating hummus. The savory dip is just irresistible.
+                  And don’t worry if you just can’t stop dipping pita in hummus 
+                  — we’ve found 10 great reasons why it’s completely acceptable 
+                  to eat hummus every single day of your life."
+                </p>
+                <a href="https://www.huffingtonpost.com/2014/02/26/hummus-health-benefits_n_4834315.html" target="_blank">-Huffinton Post</a>
+          </div>
+        </div>
+        <!-- End Post -->
       </div><!-- container -->
     </div><!-- Wrapper -->
     <% include ../partials/footer.ejs%>
     <script type="text/javascript" src="../../assets/js/navbar_stick.js"></script>
   </body>
 </html>
+<a href="https://www.huffingtonpost.com/2014/02/26/hummus-health-benefits_n_4834315.html" target="_blank">asdas</a>
+display: flex;
+align-items: center;
+justify-content: center;
+}

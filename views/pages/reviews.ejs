@@ -1,124 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-  <% include ../partials/head %>
+<% include ../partials/head %>
   <style>
-    #review-container > .row {
+    #reviews-container>.row {
       overflow: hidden;
-      box-shadow: 0 1px 6px rgba(57,73,76,.35);
+      box-shadow: 0 1px 6px rgba(57, 73, 76, .35);
       background: rgba(255, 255, 255, 0.493);
-      padding: 20px 20px 20px 20px;
+      padding: 30px;
       margin-bottom: 20px;
     }
 
-    #review-container > .row > div > div:nth-of-type(2){
+    .review-row>div>div:nth-of-type(2){
       margin-left: 1px;
       border-left: 1px solid black;
     }
-</style>
+
+    .review-row .review-img-col {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .review-row .review-text-col {
+      
+    }
+
+    .review-row > .review-text-col {
+      border-left: 1px black solid;
+    }
+
+  
+  </style>
+
   <body>
     <% include ../partials/nav %>
-    <div class="wrapper">
-    <div id="review-container" class="container rounded">
-      <div class="row text-center rounded">
-        <div class="col-sm-12">
-          <h1 class="text-center">Reviews</h1>
+      <div class="wrapper">
+        <div id="reviews-container" class="container rounded">
+          <div class="row text-center rounded">
+            <div class="col-sm-12">
+              <h1 class="text-center">Reviews</h1>
+            </div>
+          </div>
+          <div class="row rounded review-row">
+            <div class="review-img-col col-md-4">
+              <img src="../../assets/images/rachel-ray.jpeg" alt="" class="img-fluid rounded">
+            </div>
+            <div class="col-md-8 review-text-col">
+              <div class="row">
+                <div class="col-sm-12 review-title-col">
+                  <h4>#1 Best Roasted Red Pepper</h4>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 review-body-col">
+                  <p>“Our tasters happily ate this winner with their eyes first, noting its beautiful “charred bits” of roasted
+                    red peppers. Made in small batches, its “smokey sweetness” went over big with judges.”</p>
+                  <a href="http://www.rachaelraymag.com/food/taste-test-the-best-hummus" target="_blank">- Rachel Ray Magazine</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--row-->
+          <div class="row rounded review-row">
+            <div class="col-md-4 review-img-col">
+              <img src="../../assets/images/daily-meal.jpeg" alt="" class="img-fluid rounded">
+            </div>
+            <div class="col-md-8 review-text-col">
+              <div class="row">
+                <div class="col-sm-12 review-title-col">
+                  <h4>#2 Best Hummos</h4>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 review-body-col">
+                  <p>"...if you see it, snag it. It was nearly universally liked, praised for its almost-citrusy, bright flavor..."</p>
+                  <a href="http://www.thedailymeal.com/ultimate-store-bought-hummus-taste-test/12914" target="_blank">- The Daily Meal</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--row-->
+          <div class="row rounded review-row">
+            <div class="col-md-4 review-img-col">
+              <img src="../../assets/images/huffpost.jpeg" alt="" class="img-fluid rounded" style="max-height:100%;">
+            </div>
+            <div class="col-md-8 review-text-col">
+              <div class="row">
+                <div class="col-sm-12 review-title-col">
+                  <h4>#1 Best Hummos</h4>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 review-body-col">
+                  <p>"Garlicky, good texture, great flavors." "The clear winner." "Very good garlicky flavor."</p>
+                  <a href="http://www.huffingtonpost.com/2011/09/13/the-best-hummus-taste-test_n_960873.html" target="_blank">- Huffington Post</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row rounded review-row">
+            <div class="col-md-4">
+              <img src="https://pbs.twimg.com/media/BkjfpbgIYAASMer.jpg" alt="" class="img-fluid rounded">
+            </div>
+            <div class="col-md-8 review-text-col">
+              <div class="row">
+                <div class="col-sm-12 review-title-col">
+                  <h4>#2 Best Hummos For Your Waistline</h4>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 review-body-col">
+                  <p>"Abraham's hummus is the package deal: low in calories (40 per serving), fat (2g), and sodium (50 mg),
+                    it's difficult to beat this brand of chickpea goodness."</p>
+                  <a href="https://spoonuniversity.com/healthier/the-healthiest-hummus-brands-for-your-waistline" target="_blank">- Spoon University</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--row-->
+          <div class="row rounded review-row">
+            <div class="col-md-4" style=" display:flex;align-items: center;justify-content: center;">
+              <img src="../../assets/images/eatthis.jpeg" alt="" class="img-fluid rounded">
+            </div>
+            <div class="col-md-8 review-text-col">
+              <div class="row">
+                <div class="col-sm-12 review-title-col">
+                  <h4>#2 Best Hummos</h4>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 review-body-col">
+                  <p>"With just 40 calories and 2 grams of fat, we say "yes please" to Abraham's hummus! Plus, they add in a
+                    splash of apple cider vinegar, a trendy health food today that is proven to help minimize your hunger.
+                    With a side of veggies for dipping, Abraham's makes the perfect weight loss snack."</p>
+                  <a href="http://www.eatthis.com/hummus" target="_blank">- EatThis.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--row-->
         </div>
+        <!-- container-->
+        
+        
       </div>
-      <div class="row rounded">
-          <div class="col-md-4" style=" display:flex;align-items: center;justify-content: center;">
-            <img src="../../assets/images/rachel-ray.jpeg" alt="" class="img-fluid rounded" >
-          </div>
-          <div class="col-md-8 border-left p-4">
-            <div class="row">
-              <div class="col-sm-12">
-                <h2>#1 Best Roasted Red Pepper</h2>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-12">
-                <p>“Our tasters happily ate this winner with their eyes first, noting its beautiful “charred bits” of roasted red peppers. Made in small batches, its “smokey sweetness” went over big with judges.”</p>
-                <a href="http://www.rachaelraymag.com/food/taste-test-the-best-hummus" target="_blank">- Rachel Ray Magazine</a>
-              </div>
-            </div>
-          </div>
-        </div><!--row-->
-        <div class="row rounded">
-          <div class="col-md-4">
-            <img src="../../assets/images/daily-meal.jpeg" alt="" class="img-fluid rounded">
-          </div>
-          <div class="col-md-8 border-left p-4">
-            <div class="row">
-              <div class="col-sm-12">
-                <h2>#2 Best Hummos</h2>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-12">
-                <p>"...if you see it, snag it. It was nearly universally liked, praised for its almost-citrusy, bright flavor..."</p>
-                <a href="http://www.thedailymeal.com/ultimate-store-bought-hummus-taste-test/12914"  target="_blank">- The Daily Meal</a>
-              </div>
-            </div>
-          </div>
-        </div><!--row-->
-      <div class="row rounded">
-        <div class="col-md-4">
-          <img src="../../assets/images/huffpost.jpeg" alt="" class="img-fluid rounded" style="max-height:100%;">
-        </div>
-        <div class="col-md-8 border-left p-4">
-          <div class="row">
-            <div class="col-sm-12">
-              <h2>#1 Best Hummos</h2>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-12">
-              <p>"Garlicky, good texture, great flavors." "The clear winner." "Very good garlicky flavor."</p>
-              <a href="http://www.huffingtonpost.com/2011/09/13/the-best-hummus-taste-test_n_960873.html"  target="_blank">- Huffington Post</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row rounded">
-        <div class="col-md-4">
-          <img src="https://pbs.twimg.com/media/BkjfpbgIYAASMer.jpg" alt="" class="img-fluid rounded">
-        </div>
-        <div class="col-md-8 border-left p-4">
-          <div class="row">
-            <div class="col-sm-12">
-              <h2>#2 Best Hummos For Your Waistline</h2>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-12">
-              <p>"Abraham's hummus is the package deal: low in calories (40 per serving), fat (2g), and sodium (50 mg), it's difficult to beat this brand of chickpea goodness."</p>
-              <a href="https://spoonuniversity.com/healthier/the-healthiest-hummus-brands-for-your-waistline" target="_blank">- Spoon University</a>
-            </div>
-          </div>
-        </div>
-      </div><!--row-->
-      <div class="row rounded">
-        <div class="col-md-4" style=" display:flex;align-items: center;justify-content: center;">
-          <img src="../../assets/images/eatthis.jpeg" alt="" class="img-fluid rounded">
-        </div>
-        <div class="col-md-8 border-left p-4">
-          <div class="row">
-            <div class="col-sm-12">
-              <h2>#2 Best Hummos</h2>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-12">
-              <p>"With just 40 calories and 2 grams of fat, we say "yes please" to Abraham's hummus! Plus, they add in a splash of apple cider vinegar, a trendy health food today that is proven to help minimize your hunger. With a side of veggies for dipping, Abraham's makes the perfect weight loss snack."</p>
-              <a href="http://www.eatthis.com/hummus" target="_blank">- EatThis.com</a>
-            </div>
-          </div>
-        </div>
-      </div><!--row-->
-    </div><!-- container-->
-      <!-- https://www.huffingtonpost.com/2011/09/13/the-best-hummus-taste-test_n_960873.html -->
-      <a href="https://www.huffingtonpost.com/2014/02/26/hummus-health-benefits_n_4834315.html" target="_blank">asdas</a>
-    </div>
-    <% include ../partials/footer.ejs%>
-    <script type="text/javascript" src="../../assets/js/navbar_stick.js"></script>
+      <% include ../partials/footer.ejs%>
+        <script type="text/javascript" src="../../assets/js/navbar_stick.js"></script>
   </body>
+
 </html>
