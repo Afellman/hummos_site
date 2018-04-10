@@ -8,59 +8,67 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <% include ../partials/head %>
+<% include ../partials/head %>
   <style>
-  
-#card-container > div > div > div {
-  box-shadow: 0 1px 2px rgba(57,73,76,.35);
-  /* border: 3px solid #FFF3DC; */
-  transition: .3s;
-  overflow: hidden;
-  
-}
+    #card-container>div>div>a {
+      text-decoration: none;
+      color: black;
+    }
 
-#card-container > div > div > div:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 1px 10px rgba(57,73,76,.35);
+    #card-container .caption {
+      padding: 20px;
+    }
 
-}
+    #card-container .caption>p {
+      margin-bottom: 0px;
+    }
 
-#card-container > div > div > div > img {
-  
-}
+    #card-container>div>div>a>div {
+      background: white;
+      box-shadow: 0 1px 2px rgba(57, 73, 76, .35);
+      /* border: 3px solid #FFF3DC; */
+      transition: .3s ease-in;
+      overflow: hidden;
+    }
 
+    #card-container>div>div>a>div:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 1px 10px rgba(57, 73, 76, 0.842);
 
-#card-container > div > div > div > div{
-  background: #fff;
-  padding: 10px;
-  
-}
+    }
 
-#about-container {
-  overflow: hidden;
-  box-shadow: 0 1px 6px rgba(57,73,76,.35);
-  background: rgba(255, 255, 255, 0.493);
-  padding: 20px 20px 20px 20px;
-}
+    #card-container>div>div>div>img {}
 
 
-#slogan-container > div > div > div {
-  font-family: 'cooper';
-  letter-spacing: 2px;
-  padding: 30px 0px 30px 0px;
-  background: rgba(243, 198, 76, 0.849);
-  box-shadow: 0 1px 6px rgba(57,73,76,.35)
-}
-
-#blog-container>.row {
+    #about-container {
       overflow: hidden;
       box-shadow: 0 1px 6px rgba(57, 73, 76, .35);
       background: rgba(255, 255, 255, 0.493);
-      padding: 20px;
+      padding: 20px 20px 20px 20px;
+    }
+
+
+    #slogan-container>div>div>div {
+      font-family: 'cooper';
+      letter-spacing: 2px;
+      padding: 30px 0px 30px 0px;
+      background: rgba(243, 198, 76, 0.849);
+      box-shadow: 0 1px 6px rgba(57, 73, 76, .35)
+    }
+
+    #blog-container > .row {
+      overflow: hidden;
+      box-shadow: 0 1px 6px rgba(57, 73, 76, .35);
+      background: rgba(255, 255, 255, 0.493);
+      padding: 30px 15px 30px 15px;
       margin-bottom: 20px;
     }
 
-    .blog-row>div>div:nth-of-type(2){
+      #blog-container > .row .blog-title-col > a > h5 {
+        display: inline;
+      }
+
+    .blog-row > div > div:nth-of-type(2) {
       margin-left: 1px;
       border-left: 1px solid black;
     }
@@ -72,100 +80,101 @@
     }
 
     .blog-row .blog-text-col {
-      
-    }
 
-    .blog-row > .blog-text-col {
+    }
+    .blog-row>.blog-text-col {
       border-left: 1px black solid;
     }
+  </style>
 
-  
-</style>
   <body>
     <% include ../partials/nav %>
-    <div class="wrapper">
-    <div id="card-container" class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="home-cards rounded">
-            <img src="assets/images/alex.jpg" alt="Card image cap" height="auto" width="100%">
-            <div class="caption">
-              <h4>Small Batch</h4>
-              <p>Unlike the big guys, Abraham's products are still handmade in small batches.</p>
-              <a href="./about" class="btn btn-info">Our Story</a>
+      <div class="wrapper">
+        <div id="card-container" class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <a href="/about">
+                <div class="home-cards rounded">
+                  <img src="assets/images/alex.jpg" alt="Card image cap" height="auto" width="100%">
+                  <div class="caption">
+                    <h4>Small Batch</h4>
+                    <p>Unlike the big guys, Abraham's products are still handmade in small batches.</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-4">
+              <a href="/products">
+                <div class="home-cards rounded">
+                  <img style="" src="assets/images/flavors.jpg" alt="Card image cap" height="auto" width="100%">
+                  <div class="caption">
+                    <h4>Variety</h4>
+                    <p>We offer 14 unique flavors of hummos to satisfy any taste. Try a different one today!</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-4">
+              <a href="/hummos_locater">
+                <div class="home-cards rounded">
+                  <img src="assets/images/map_thumbnail.png" alt="Card image cap" height="auto" width="100%">
+                  <div class="caption">
+                    <h4>Find Us</h4>
+                    <p>Come find Abraham's at many of the gourmet supermarkets in the tri state area.</p>
+                  </div>
+                </div>
+              </a>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="home-cards rounded">
-            <img style=""  src="assets/images/flavors.jpg" alt="Card image cap" height="auto" width="100%">
-            <div class="caption">
-              <h4>Variety</h4>
-              <p>We offer 14 unique flavors of hummos to satisfy any taste. Try a different one today!</p>
-              <a href="./products" class="btn btn-info">Flavors</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="home-cards rounded">
-            <img src="assets/images/map_thumbnail.png" alt="Card image cap" height="auto" width="100%">
-            <div class="caption">
-              <h4>Find Us</h4>
-              <p>Come find Abraham's at many of the gourmet supermarkets in the tri state area.</p>
-              <a href="hummos_locater" class="btn btn-info">Locations</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      </div><!-- container -->
-      <div class="container-fluid" id="slogan-container">
-        <div class="row">
-          <div class="col-12">
-            <div class="text-dark align-items-center row text-center">
-              <div class="col mx-auto">
-                <h1 style="font-style: italic;">"Middle Eastern Foods From Middle Eastern <br> New Jersey"</em>
-                </h1>
-                <h5>Since 1985</h5>
+        <!-- container -->
+        <div class="container-fluid" id="slogan-container">
+          <div class="row">
+            <div class="col-12">
+              <div class="text-dark align-items-center row text-center">
+                <div class="col mx-auto">
+                  <h1 style="font-style: italic;">"Middle Eastern Foods From Middle Eastern
+                    <br> New Jersey"</em>
+                  </h1>
+                  <h5>Since 1985</h5>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="container rounded bg-light" id="blog-container">
-        <!-- Blog Post -->
-        <div class="row rounded blog-row">
-          <div class="col-md-4 blog-img-col">
+        <div class="container rounded bg-light" id="blog-container">
+          <!-- Blog Post -->
+          <div class="row rounded blog-row">
+            <div class="col-sm-12 blog-title-col">
+              <a href="https://www.huffingtonpost.com/2014/02/26/hummus-health-benefits_n_4834315.html" target="_blank">
+                <h5 class="">"10 Reasons Why We Should All Be Eating More Hummus"</h5>
+              </a>
+              <p class="blog-date"> - 04/02/18</p>
+            </div>
+            <div class="col-md-4 blog-img-col">
               <a href="https://www.huffingtonpost.com/2014/02/26/hummus-health-benefits_n_4834315.html" target="_blank">
                 <img src="https://i.huffpost.com/gen/1645639/thumbs/o-HUMMUS2-570.jpg?16" alt="" class="img-fluid rounded" style="max-height:100%;">
               </a>
-          </div>
-          <div class="col-md-8 blog-text-col">
-            <div class="row">
-              <div class="col-sm-12 blog-title-col">
-                  <a href="https://www.huffingtonpost.com/2014/02/26/hummus-health-benefits_n_4834315.html" target="_blank">
-                    <h5 class="">"10 Reasons Why We Should All Be Eating More Hummus"</h5>
-                  </a>
-              </div>
             </div>
-                <p>"If you’re not really into hummus, we bet you know someone 
-                  who is. Your best friend, your mom, your landlord — 
-                  they’re all eating hummus. The savory dip is just irresistible.
-                  And don’t worry if you just can’t stop dipping pita in hummus 
-                  — we’ve found 10 great reasons why it’s completely acceptable 
-                  to eat hummus every single day of your life."
-                </p>
-                <a href="https://www.huffingtonpost.com/2014/02/26/hummus-health-benefits_n_4834315.html" target="_blank">-Huffinton Post</a>
+            <div class="col-md-8 blog-text-col">
+              <div class="row">
+                <div class="col-sm-12">
+                  <p>"If you’re not really into hummus, we bet you know someone who is. Your best friend, your mom, your landlord
+                    — they’re all eating hummus. The savory dip is just irresistible. And don’t worry if you just can’t stop
+                    dipping pita in hummus — we’ve found 10 great reasons why it’s completely acceptable to eat hummus every
+                    single day of your life."
+                  </p>
+                </div>
+              </div>
+              <a href="https://www.huffingtonpost.com/2014/02/26/hummus-health-benefits_n_4834315.html" target="_blank">-Huffinton Post</a>
+            </div>
           </div>
+          <!-- End Post -->
         </div>
-        <!-- End Post -->
-      </div><!-- container -->
-    </div><!-- Wrapper -->
-    <% include ../partials/footer.ejs%>
-    <script type="text/javascript" src="../../assets/js/navbar_stick.js"></script>
+        <!-- container -->
+      </div>
+      <!-- Wrapper -->
+      <% include ../partials/footer.ejs%>
+        <script type="text/javascript" src="../../assets/js/navbar_stick.js"></script>
   </body>
 </html>
-<a href="https://www.huffingtonpost.com/2014/02/26/hummus-health-benefits_n_4834315.html" target="_blank">asdas</a>
-display: flex;
-align-items: center;
-justify-content: center;
-}
