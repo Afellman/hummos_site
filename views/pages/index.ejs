@@ -1,7 +1,16 @@
-
-
 <% include ../partials/head %>
   <style>
+    #hero {
+      margin-top: 80px;
+      background: url("assets/images/Abraham's_5.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      height: 400px;
+      box-shadow: 1px 2px 3px #888888;
+      padding: 0px;
+    }
+
     #card-container>div>div>a {
       text-decoration: none;
       color: black;
@@ -44,7 +53,7 @@
       font-family: 'cooper';
       letter-spacing: 2px;
       padding: 30px 0px 30px 0px;
-      background: rgba(243, 198, 76, 0.849);
+      background: #F4CB7D;
       box-shadow: 0 1px 6px rgba(57, 73, 76, .35)
     }
 
@@ -78,117 +87,121 @@
     }
   </style>
 
-    <% include ../partials/nav %>
-      <div class="wrapper">
-        <div id="card-container" class="container">
-          <div class="row">
-            <div class="col-md-4">
-              <a href="/about">
-                <div class="home-cards rounded">
-                  <img src="assets/images/alex.jpg" alt="Card image cap" height="auto" width="100%">
-                  <div class="caption">
-                    <h4>Small Batch</h4>
-                    <p>Unlike the big guys, Abraham's products are still handmade in small batches.</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="col-md-4">
-              <a href="/products">
-                <div class="home-cards rounded">
-                  <img style="" src="assets/images/flavors.jpg" alt="Card image cap" height="auto" width="100%">
-                  <div class="caption">
-                    <h4>Variety</h4>
-                    <p>We offer 14 unique flavors of hummos to satisfy any taste. Try a different one today!</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="col-md-4">
-              <a href="/hummos_locater">
-                <div class="home-cards rounded">
-                  <img src="assets/images/map_thumbnail.png" alt="Card image cap" height="auto" width="100%">
-                  <div class="caption">
-                    <h4>Find Us</h4>
-                    <p>Come find Abraham's at many of the gourmet supermarkets in the tri state area.</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-        <!-- container -->
-        <div class="container-fluid" id="slogan-container">
-          <div class="row">
-            <div class="col-12">
-              <div class="text-dark align-items-center row text-center">
-                <div class="col mx-auto">
-                  <h1 style="font-style: italic;">"Middle Eastern Foods From Middle Eastern
-                    <br> New Jersey"</em>
-                  </h1>
-                  <h5>Since 1985</h5>
+  <% include ../partials/nav %>
+    <div id="hero"></div>
+    <div class="wrapper">
+      <div id="card-container" class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <a href="/about">
+              <div class="home-cards rounded">
+                <img src="assets/images/alex.jpg" alt="Card image cap" height="auto" width="100%">
+                <div class="caption">
+                  <h3>Small Batch</h3>
+                  <p>Unlike the big guys, Abraham's products are still handmade in small batches.</p>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
-        </div>
-        <div class="container rounded" id="blog-container">
-          <!-- Blog Post -->
-          <div class="row rounded blog-row">
-            <div class="col-sm-12 blog-title-col">
-              <a href="https://www.huffingtonpost.com/2014/02/26/hummus-health-benefits_n_4834315.html" target="_blank">
-                <h5 class="">"What most people get wrong about making hummus"</h5>
-              </a>
-              <p class="blog-date"> - 04/17/18</p>
-            </div>
-            <div class="col-md-4 blog-img-col">
-              <a href="https://www.washingtonpost.com/lifestyle/food/what-people-get-wrong-about-making-hummus/2015/09/04/72c7c844-4dc5-11e5-902f-39e9219e574b_story.html?noredirect=on&utm_term=.c7c1ea86adf7" target="_blank">
-                <img src="https://img.washingtonpost.com/rf/image_1484w/2010-2019/WashingtonPost/2015/08/29/Others/Images/2015-08-28/fd-HUMMUS09090011440818586.jpg?uuid=RsWiTE39EeWAwhBup_uA1A" alt="" class="img-fluid rounded" style="max-height:100%;">
-              </a>
-            </div>
-            <div class="col-md-8 blog-text-col">
-              <div class="row">
-                <div class="col-sm-12">
-                  <p>
-                    "What I’ve discovered in my quest to perfect the purest form of hummus should have been obvious: It’s not the equipment; it’s what you put in it that matters."
-                  </p>
+          <div class="col-md-4">
+            <a href="/products">
+              <div class="home-cards rounded">
+                <img style="" src="assets/images/flavors.jpg" alt="Card image cap" height="auto" width="100%">
+                <div class="caption">
+                  <h3>Variety</h3>
+                  <p>We offer 14 unique flavors of hummos to satisfy any taste. Try a different one today!</p>
                 </div>
               </div>
-              <a href="https://www.washingtonpost.com/lifestyle/food/what-people-get-wrong-about-making-hummus/2015/09/04/72c7c844-4dc5-11e5-902f-39e9219e574b_story.html?noredirect=on&utm_term=.c7c1ea86adf7"
-                target="_blank">-Washington Post</a>
-            </div>
+            </a>
           </div>
-          <!-- End Post -->
-          <!-- Blog Post -->
-          <div class="row rounded blog-row">
-            <div class="col-sm-12 blog-title-col">
-              <a href="https://www.huffingtonpost.com/2014/02/26/hummus-health-benefits_n_4834315.html" target="_blank">
-                <h5 class="">"10 Reasons Why We Should All Be Eating More Hummus"</h5>
-              </a>
-              <p class="blog-date"> - 04/02/18</p>
-            </div>
-            <div class="col-md-4 blog-img-col">
-              <a href="https://www.huffingtonpost.com/2014/02/26/hummus-health-benefits_n_4834315.html" target="_blank">
-                <img src="https://i.huffpost.com/gen/1645639/thumbs/o-HUMMUS2-570.jpg?16" alt="" class="img-fluid rounded" style="max-height:100%;">
-              </a>
-            </div>
-            <div class="col-md-8 blog-text-col">
-              <div class="row">
-                <div class="col-sm-12">
-                  <p>"If you’re not really into hummus, we bet you know someone who is. Your best friend, your mom, your landlord
-                    — they’re all eating hummus. The savory dip is just irresistible. And don’t worry if you just can’t stop
-                    dipping pita in hummus — we’ve found 10 great reasons why it’s completely acceptable to eat hummus every
-                    single day of your life."
-                  </p>
+          <div class="col-md-4">
+            <a href="/hummos_locater">
+              <div class="home-cards rounded">
+                <img src="assets/images/map_thumbnail.png" alt="Card image cap" height="auto" width="100%">
+                <div class="caption">
+                  <h3>Find Us</h3>
+                  <p>Come find Abraham's at many of the gourmet supermarkets in the tri state area.</p>
                 </div>
               </div>
-              <a href="https://www.huffingtonpost.com/2014/02/26/hummus-health-benefits_n_4834315.html" target="_blank">-Huffington Post</a>
-            </div>
+            </a>
           </div>
-          <!-- End Post -->
         </div>
-        <!-- container -->
       </div>
-      <!-- Wrapper -->
-      <% include ../partials/footer.ejs%>
-        <script type="text/javascript" src="../../assets/js/navbar_stick.js"></script>
+      <!-- container -->
+      <div class="container-fluid" id="slogan-container">
+        <div class="row">
+          <div class="col-12">
+            <div class="text-dark align-items-center row text-center">
+              <div class="col mx-auto">
+                <h1 style="font-style: italic;">"Middle Eastern Foods From Middle Eastern
+                  <br> New Jersey"</em>
+                </h1>
+                <h5>Since 1985</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container rounded" id="blog-container">
+        <!-- Blog Post -->
+        <div class="row rounded blog-row">
+          <div class="col-sm-12 blog-title-col">
+            <a href="https://www.huffingtonpost.com/2014/02/26/hummus-health-benefits_n_4834315.html" target="_blank">
+              <h5 class="">"What most people get wrong about making hummus"</h5>
+            </a>
+            <p class="blog-date"> - 04/17/18</p>
+          </div>
+          <div class="col-md-4 blog-img-col">
+            <a href="https://www.washingtonpost.com/lifestyle/food/what-people-get-wrong-about-making-hummus/2015/09/04/72c7c844-4dc5-11e5-902f-39e9219e574b_story.html?noredirect=on&utm_term=.c7c1ea86adf7"
+              target="_blank">
+              <img src="https://img.washingtonpost.com/rf/image_1484w/2010-2019/WashingtonPost/2015/08/29/Others/Images/2015-08-28/fd-HUMMUS09090011440818586.jpg?uuid=RsWiTE39EeWAwhBup_uA1A"
+                alt="" class="img-fluid rounded" style="max-height:100%;">
+            </a>
+          </div>
+          <div class="col-md-8 blog-text-col">
+            <div class="row">
+              <div class="col-sm-12">
+                <p>
+                  "What I’ve discovered in my quest to perfect the purest form of hummus should have been obvious: It’s not the equipment;
+                  it’s what you put in it that matters."
+                </p>
+              </div>
+            </div>
+            <a href="https://www.washingtonpost.com/lifestyle/food/what-people-get-wrong-about-making-hummus/2015/09/04/72c7c844-4dc5-11e5-902f-39e9219e574b_story.html?noredirect=on&utm_term=.c7c1ea86adf7"
+              target="_blank">-Washington Post</a>
+          </div>
+        </div>
+        <!-- End Post -->
+        <!-- Blog Post -->
+        <div class="row rounded blog-row">
+          <div class="col-sm-12 blog-title-col">
+            <a href="https://www.huffingtonpost.com/2014/02/26/hummus-health-benefits_n_4834315.html" target="_blank">
+              <h5 class="">"10 Reasons Why We Should All Be Eating More Hummus"</h5>
+            </a>
+            <p class="blog-date"> - 04/02/18</p>
+          </div>
+          <div class="col-md-4 blog-img-col">
+            <a href="https://www.huffingtonpost.com/2014/02/26/hummus-health-benefits_n_4834315.html" target="_blank">
+              <img src="https://i.huffpost.com/gen/1645639/thumbs/o-HUMMUS2-570.jpg?16" alt="" class="img-fluid rounded" style="max-height:100%;">
+            </a>
+          </div>
+          <div class="col-md-8 blog-text-col">
+            <div class="row">
+              <div class="col-sm-12">
+                <p>"If you’re not really into hummus, we bet you know someone who is. Your best friend, your mom, your landlord
+                  — they’re all eating hummus. The savory dip is just irresistible. And don’t worry if you just can’t stop
+                  dipping pita in hummus — we’ve found 10 great reasons why it’s completely acceptable to eat hummus every
+                  single day of your life."
+                </p>
+              </div>
+            </div>
+            <a href="https://www.huffingtonpost.com/2014/02/26/hummus-health-benefits_n_4834315.html" target="_blank">-Huffington Post</a>
+          </div>
+        </div>
+        <!-- End Post -->
+      </div>
+      <!-- container -->
+    </div>
+    <!-- Wrapper -->
+    <% include ../partials/footer.ejs%>
+      <script type="text/javascript" src="../../assets/js/navbar_stick.js"></script>

@@ -6,12 +6,20 @@
   font-weight: normal;
   font-style: normal;
   font-size: 12px;
-  
+}
+
+@font-face {
+  font-family: 'default';
+  src: url('../fonts/Brandon_med.otf');
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;
 }
 
 body {
-  
-    background: #FFF3DC;
+  font-family: "default";
+  font-size: 1.25rem;
+  background: #FFF3DC;
 }
 
 footer {

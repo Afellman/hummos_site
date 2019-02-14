@@ -1,104 +1,95 @@
- <style>
+<style>
+  .narbar-collapse {
+    transition: .4s ease-in;
 
-.narbar-collapse {
-  transition: .4s ease-in;
- 
-}
-#nav-container {
-  margin-top: 80px;
-  background: url("https://image.shutterstock.com/z/stock-photo-hummus-in-metal-bowl-on-dark-wooden-table-selective-focus-426448549.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 400px;
-  box-shadow: 1px 2px 3px #888888;
-  padding: 0px;
-}
-
-#nav-container * {
-  
-  color: white;
-  
-}
-
-.navbar{
-  position: fixed;
-  top: 0;
-  z-index: 99;
-  
-  width: 100%;
-  padding: 0px;
-}
-
-.nav-item {
-  padding-right: 10px;
-}
-   
-#title {
-  font-family: "cooper", sans-serif;
-}
-#navbarSupportedContent {
-  box-shadow: 0 1px 6px rgba(57,73,76,.35);
-  padding: 20px 0 20px 0;
-  width: 100%;
-  color: black;
-  background: rgba(255, 255, 255, 0.89);
-}
-
-#navbar-ul > li > a {
-  color: black;
-}
-.sticky {
-  transition: .5s;
-  position: fixed !important;
-  top: 0;
-  width: 100%;
-  z-index: 99;
-  background: rgba(255, 255, 255, 0.872) !important;
-  padding: 10px 0px 10px 0px;
-} 
-.sticky > ul > li > a {
-  color: rgb(27, 27, 27) !important;
-}
-
-@media screen and (max-width: 992px){
-  header {
-    height: 45vw;
-    background-size: 42vw;
   }
-}
-  
 
+  #nav-container * {
+
+    color: white;
+
+  }
+
+  .navbar {
+    top: 0;
+    z-index: 99;
+    width: 100%;
+    padding: 0px;
+  }
+
+  .nav-item {
+    padding-right: 10px;
+  }
+
+  #title {
+    font-family: "cooper", sans-serif;
+  }
+
+  #navbarSupportedContent {
+    box-shadow: 0 1px 6px rgba(57, 73, 76, .35);
+    padding: 20px 0 20px 0;
+    width: 100%;
+    color: black;
+    background: rgba(255, 255, 255, 0.89);
+  }
+
+  #navbar-ul>li>a {
+    color: black;
+  }
+
+  .sticky {
+    transition: .5s;
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    background: rgba(255, 255, 255, 0.872) !important;
+    padding: 10px 0px 10px 0px;
+  }
+
+  .sticky>ul>li>a {
+    color: rgb(27, 27, 27) !important;
+  }
+
+  @media screen and (max-width: 992px) {
+    header {
+      height: 45vw;
+      background-size: 42vw;
+    }
+  }
 </style>
- <div id="nav-container" class="container-fluid">
-   <nav class="navbar d-block navbar-expand-lg navbar-light">     
-     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-       <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul id="navbar-ul" class="navbar-nav ml-auto mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/products">Products</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/hummos_locater">Hummos Locater</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/reviews">Reviews</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <header> 
-    </header>
-  
+<div id="nav-container">
+  <nav class="navbar d-block navbar-expand-lg navbar-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul id="navbar-ul" class="navbar-nav ml-auto mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/products">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/hummos_locater">Hummos Locater</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/reviews">Reviews</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <header>
+  </header>
+
 </div>
